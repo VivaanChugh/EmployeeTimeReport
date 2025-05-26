@@ -1,0 +1,28 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/
+
+
+
+IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='EmployeeTimeLog' AND xtype='U')
+BEGIN
+    CREATE TABLE EmployeeTimeLog (
+        Id INT IDENTITY(1,1) PRIMARY KEY,
+        EmployeeName NVARCHAR(100),
+        LogTime DATETIME,
+        Location NVARCHAR(100)
+    );
+END
+
