@@ -50,12 +50,12 @@ A custom intranet module for **DotNetNuke (DNN)** built in **C# and ASP.NET WebF
 1. Go to the **IT Upload Panel** in the module.
 2. Upload a `.txt` file containing logs in the following format:
 
-Date: 2025-06-05
-Event ID: 4624
-User: jdoe
-Time: 08:45:12
-Location: Toronto
-Controller: BranchA
+- Date: 2025-06-05
+- Event ID: 4624
+- User: jdoe
+- Time: 08:45:12
+- Location: Toronto
+- Controller: BranchA
 
 3. On success, logs are stored in the module database.
 
