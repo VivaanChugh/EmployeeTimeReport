@@ -34,14 +34,14 @@ A custom intranet module for **DotNetNuke (DNN)** built in **C# and ASP.NET WebF
 
 ## 📁 Folder Structure
 
-/DesktopModules/EmployeeTimeReport/
-│
-├── View.ascx # Main UI markup
-├── View.ascx.cs # Backend code-behind logic
-├── View.ascx.designer.cs # Designer file for controls
-├── EmployeeLogParser.cs # Logic to parse uploaded text files
-├── Scripts/ # JavaScript + Google Chart integration
-├── Styles/ # Custom CSS (optional)
+- /DesktopModules/EmployeeTimeReport/
+- │
+- ├── View.ascx # Main UI markup
+- ├── View.ascx.cs # Backend code-behind logic
+- ├── View.ascx.designer.cs # Designer file for controls
+- ├── EmployeeLogParser.cs # Logic to parse uploaded text files
+- ├── Scripts/ # JavaScript + Google Chart integration
+- ├── Styles/ # Custom CSS (optional)
 
 ---
 
