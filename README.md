@@ -25,14 +25,14 @@
 ## 🗂 File Structure
 
 DesktopModules/
-└── EmployeeTimeReport/
-├── View.ascx / View.ascx.cs # UI & logic for upload/report
-├── Settings.ascx / Settings.ascx.cs # Optional module settings
-├── SqlDataProvider.cs # SQL data access
-├── EmployeeTimeReportModuleBase.cs # Shared base class
-├── FeatureController.cs # IPortable, ISearchable, etc.
-├── Resources/
-└── App_LocalResources/
+- └── EmployeeTimeReport/
+- ├── View.ascx / View.ascx.cs # UI & logic for upload/report
+- ├── Settings.ascx / Settings.ascx.cs # Optional module settings
+- ├── SqlDataProvider.cs # SQL data access
+- ├── EmployeeTimeReportModuleBase.cs # Shared base class
+- ├── FeatureController.cs # IPortable, ISearchable, etc.
+- ├── Resources/
+- └── App_LocalResources/
 
 
 ---
