@@ -82,9 +82,9 @@
                 
                 <div class="action-bar">
                     <asp:Button ID="btnGenerateReport" runat="server" Text="Generate Report" 
-                               OnClick="btnGenerateReport_Click" CssClass="btn btn-success" />
+                               OnClick="btnGenerateReport_Click" CssClass="btn btn-primary btn-upload" />
                     <asp:Button ID="btnDownloadReport" runat="server" Text="Export CSV" 
-                               OnClick="btnDownloadReport_Click" CssClass="btn btn-outline" />
+                               OnClick="btnDownloadReport_Click" CssClass="btn btn-primary btn-upload" />
                 </div>
             </div>
         </div>
