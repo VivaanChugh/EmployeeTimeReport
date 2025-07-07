@@ -68,11 +68,11 @@ namespace Vivaan.ModulesEmployeeTimeReport
                             string name = ExtractBetween(description, "User ", "(").Trim();
 
                             string checkQuery = @"
-                                SELECT COUNT(*) FROM EmployeeTimeLog
-                                WHERE EmployeeName = @name AND LogTime = @logTime AND Location = @location";
+                                    SELECT COUNT(*) FROM EmployeeTimeLog
+                                    WHERE EmployeeName = @name AND LogTime = @logTime AND Location = @location";
 
                             int exists = (int)SqlHelper.ExecuteScalar(
-                                Globals.GetDBConnectionString(),
+                                Config.GetConnectionString(), 
                                 CommandType.Text,
                                 checkQuery,
                                 new SqlParameter("@name", name),
@@ -83,10 +83,10 @@ namespace Vivaan.ModulesEmployeeTimeReport
                             if (exists == 0)
                             {
                                 string insertQuery = @"
-                                    INSERT INTO EmployeeTimeLog (EmployeeName, LogTime, Location)
-                                    VALUES (@name, @logTime, @location)";
+                                        INSERT INTO EmployeeTimeLog (EmployeeName, LogTime, Location)
+                                        VALUES (@name, @logTime, @location)";
                                 SqlHelper.ExecuteNonQuery(
-                                    Globals.GetDBConnectionString(),
+                                    Config.GetConnectionString(), 
                                     CommandType.Text,
                                     insertQuery,
                                     new SqlParameter("@name", name),
@@ -252,7 +252,7 @@ namespace Vivaan.ModulesEmployeeTimeReport
                     gvLogs.DataSource = dt;
                     gvLogs.DataBind();
 
-                    // Generate scatter plot
+                    
                     var scatterPoints = new List<string>();
                     foreach (DataRow row in dt.Rows)
                     {
